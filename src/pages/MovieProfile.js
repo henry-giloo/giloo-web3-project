@@ -209,11 +209,11 @@ const MovieProfile = () => {
     })
     console.log(error);
     if(!error){
-      addPoint("purchaseTicket", address, 50);
-    if(curator){
-        addPoint("purchaseTicket", curator, 5);
-    }
-    addPoint("purchaseTicket", directorData, 15);
+        addPoint("purchaseTicket", address, 50);
+      if(curator){
+          addPoint("purchaseTicket", curator, 5);
+      }
+      addPoint("purchaseTicket", directorData, 15);
     }
 };
 
@@ -242,7 +242,7 @@ const handleReferralLink = () => {
               </button>
             ) : (
               <button className="get-ticket-button" onClick={handleApprove}>
-                <img src={approveIcon} alt="Approve" />
+                <img src={getTicketIcon} alt="Approve" />
               </button>
             )}
             <button className="referral-link-button" onClick={handleReferralLink}>

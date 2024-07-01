@@ -3,6 +3,8 @@ import { getUser } from '../data/userAddressMap';
 import getAttestationsData from './getAttestationsData';
 import { schemaIdList } from '../data/EASSchemaId';
 
+const leaderboardLink = "https://www.stack.so/leaderboard/leaderboard-40a3-78225-2781"
+
 const getAttestationDetails = async (director, contractAddress) => {
   try {
     const attestationRecords = await Promise.all(
@@ -25,13 +27,13 @@ const getAttestationDetails = async (director, contractAddress) => {
           message = `${user.name} received a Curator badge. (<a href="https://base-sepolia.easscan.org/attestation/view/${detail.uid}" target="_blank">record</a>).`;
           break;
         case 'curatorPoint':
-          message = `${user.name} received 5 G points. (<a href="https://www.stack.so/leaderboard/leaderboard-40a3-78225-2759" target="_blank">leaderboard</a>)`;
+          message = `${user.name} received 5 G points. (<a href="${leaderboardLink}" target="_blank">leaderboard</a>)`;
           break;
         case 'purchaserPoint':
-          message = `${user.name} received 50 G points. (<a href="https://www.stack.so/leaderboard/leaderboard-40a3-78225-2759" target="_blank">leaderboard</a>)`;
+          message = `${user.name} received 50 G points. (<a href="${leaderboardLink}" target="_blank">leaderboard</a>)`;
           break;
         case 'directorPoint':
-          message = `${user.name} received 15 G points. (<a href="https://www.stack.so/leaderboard/leaderboard-40a3-78225-2759" target="_blank">leaderboard</a>)`;
+          message = `${user.name} received 15 G points. (<a href="${leaderboardLink}" target="_blank">leaderboard</a>)`;
           break;
         case 'curatorRevenue':
           message = user.name === director

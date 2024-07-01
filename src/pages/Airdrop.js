@@ -21,7 +21,7 @@ const Airdrop = () => {
 
       // Filter users based on the G points above condition
       if (isScoreFilterEnabled) {
-        filteredUsers = leaderboardData.leaderboard.filter(user => user.points > scoreThreshold);
+        filteredUsers = leaderboardData.leaderboard.filter(user => user.points >= scoreThreshold);
       }
 
       let curatorBadgeRecipients = [];
@@ -113,7 +113,7 @@ const Airdrop = () => {
                 </div>
             </div>
             <div className="criteria-item">
-              <label># of Proof of Watched collected</label>
+              <label># of Proof of Watch collected</label>
               <div className="input-group">
                   <div className="toggle-switch">
                     <input 
@@ -148,7 +148,7 @@ const Airdrop = () => {
       <div className="section">
         <h2>2. Choose actions</h2>
         <div className="actions">
-          <button className="drop-tickets-button">Drop tickets</button>
+          <button className="drop-tickets-button">Drop</button>
           <button className="direct-messages-button">Direct messages</button>
         </div>
       </div>

@@ -14,7 +14,7 @@ app.use(express.json()); // 解析 JSON 请求体
 // 初始化 StackClient
 const stack = new StackClient({
   apiKey: "8c315641-681d-434a-88f8-06deac8ee38c",
-  pointSystemId: "2780",
+  pointSystemId: "2781",
 });
 
 // 获取排行榜数据的路由

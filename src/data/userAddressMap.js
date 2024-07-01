@@ -40,7 +40,7 @@
     },
     {
       name: "Henry",
-      address: "0xB8c175989D05642aF327be85de06b5c06C7DF145",
+      address: "0xF76dEfD4ee2e695cA8339b0fA83948158b299635",
       Icon: "https://scarlet-hilarious-booby-67.mypinata.cloud/ipfs/QmS1mDTVeD77qhaAYKz9TfFdFCJ2tnEzt748Fq7KyLtgED/Henry.svg"
     },
     {

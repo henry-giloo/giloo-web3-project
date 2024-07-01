@@ -1,6 +1,6 @@
 // src/data/nftContracts.js
 const nftContracts = [
-    '0x8e4f217887FC207C32d2055A490b2e77f28d51f2',
+    '0xC2C2a3844F98364833D7EcAFe03f0Ccc7585DDb4',
     '0xB23D78c22d0d28Decb681f7000B0AE90ED44bBc7',
   ];
 
